@@ -18,7 +18,9 @@
 
 # my_nums = square_numbers([1,2,3,4,5])
 
-my_nums = [x*x for x in [1,2,3,4,5]]
+# my_nums = [x*x for x in [1,2,3,4,5]]
+
+my_nums = (x*x for x in [1,2,3,4,5])    # this will return generator object, it is better in performance because it not hold whole lsit in memory
 
 print(my_nums)
 for num in my_nums:
